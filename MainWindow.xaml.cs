@@ -40,6 +40,7 @@ namespace ProizvodkaWPF
             {
                 string filename = openFileDialog.FileName;
                 /*
+                 * 
                 XpsDocument doc = new XpsDocument(filename, FileAccess.Write);
                 XpsDocumentWriter writer = XpsDocument.CreateXpsDocumentWriter(doc);
                 writer.Write(DocView.Document as FixedDocument);
