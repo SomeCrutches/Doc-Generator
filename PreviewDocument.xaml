@@ -1,4 +1,4 @@
-﻿<Window x:Class="ProizvodkaWPF.MainWindow"
+﻿<Window x:Class="ProizvodkaWPF.PreviewDocument"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -11,3 +11,4 @@
         <DocumentViewer Height="416" x:Name="DocView"/>
     </StackPanel>
 </Window>
+

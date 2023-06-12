@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:ProizvodkaWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
-        <Button x:Name="Upload_button" Content="Choose your fighter" Click="UploadButton_click"/>
-        <DocumentViewer Height="416" x:Name="DocView"/>
-    </StackPanel>
+    <Grid>
+        <Button Width="100" Height="30" Content="Новое окно" Click="new_tab_button"/>
+    </Grid>
+        
+
 </Window>

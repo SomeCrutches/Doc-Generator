@@ -11,21 +11,23 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.IO;
 using System.Windows.Xps.Packaging;
+using System.Windows.Xps;
+using System.IO.Packaging;
+using System.Windows.Navigation;
+using System.IO;
 
 namespace ProizvodkaWPF
 {
     /// <summary>
-    /// Логика взаимодействия для DocView.xaml
+    /// Логика взаимодействия для PreviewDocument.xaml
     /// </summary>
-    public partial class DocView : Window
+    public partial class PreviewDocument : Window
     {
-        public DocView()
+        public PreviewDocument()
         {
             InitializeComponent();
         }
-
         private void UploadButton_click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
@@ -44,6 +46,9 @@ namespace ProizvodkaWPF
                 */
                 XpsDocument doc = new XpsDocument(filename, FileAccess.Read);
                 DocView.Document = doc.GetFixedDocumentSequence();
+
+
+
             }
         }
     }

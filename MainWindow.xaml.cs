@@ -14,8 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
-using System.Windows.Xps.Packaging;
-using System.Windows.Xps;
+
 
 
 
@@ -31,6 +30,10 @@ namespace ProizvodkaWPF
             InitializeComponent();
         }
 
-        
+        private void new_tab_button(object sender, RoutedEventArgs e)
+        {
+            PreviewDocument preview_doc = new PreviewDocument();
+            preview_doc.Show();
+        }
     }
 }
