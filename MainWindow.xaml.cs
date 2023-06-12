@@ -31,25 +31,6 @@ namespace ProizvodkaWPF
             InitializeComponent();
         }
 
-        private void UploadButton_click(object sender, RoutedEventArgs e)
-        {
-            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
-            openFileDialog.Filter = "XPS Files (*.xps)|*.xps";
-            bool? response = openFileDialog.ShowDialog();
-            if (response == true)
-            {
-                string filename = openFileDialog.FileName;
-                /*
-                 * 
-                XpsDocument doc = new XpsDocument(filename, FileAccess.Write);
-                XpsDocumentWriter writer = XpsDocument.CreateXpsDocumentWriter(doc);
-                writer.Write(DocView.Document as FixedDocument);
-                doc.Close();
-                //MessageBox.Show(filename);
-                */
-                XpsDocument doc = new XpsDocument(filename, FileAccess.Read);
-                DocView.Document = doc.GetFixedDocumentSequence();
-            }
-        }
+        
     }
 }
