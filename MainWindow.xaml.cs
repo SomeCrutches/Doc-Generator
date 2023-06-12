@@ -27,12 +27,18 @@ namespace ProizvodkaWPF
     {
         public MainWindow()
         {
+            WindowState = WindowState.Maximized;
+
             InitializeComponent();
+            
         }
 
-        private void new_tab_button(object sender, RoutedEventArgs e)
+        private void New_tab_button(object sender, RoutedEventArgs e)
         {
+
             PreviewDocument preview_doc = new PreviewDocument();
+            preview_doc.Owner = this;
+            preview_doc.Doc_type = "Hello";
             preview_doc.Show();
         }
     }

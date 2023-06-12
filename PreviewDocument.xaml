@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
         <Button x:Name="Upload_button" Content="Choose your fighter" Click="UploadButton_click"/>
+        <Button x:Name="Abra_button" Content="Preuploaded file" Click="UploadButtonAbra_click" />
         <DocumentViewer Height="416" x:Name="DocView"/>
     </StackPanel>
 </Window>

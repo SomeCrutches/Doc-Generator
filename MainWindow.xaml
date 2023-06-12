@@ -6,9 +6,56 @@
         xmlns:local="clr-namespace:ProizvodkaWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Width="100" Height="30" Content="Новое окно" Click="new_tab_button"/>
-    </Grid>
+    <TabControl TabStripPlacement="Top" Margin="0, 0, 0, 10">
         
+        <TabItem Name="tabIitemContent" Header="TabItem with Buttons">
+            <Grid ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    
+                </Grid.ColumnDefinitions>
+                <Button Content="Hello" Grid.Row="0" Grid.Column="3" Grid.RowSpan="16" Grid.ColumnSpan="3" />
+                <!--<Button Grid.Column="0" Grid.Row="0" Content="Новое окно" Click="New_tab_button" />-->
+                
+            </Grid>
+        </TabItem>
+
+        <TabItem Name="backgroundcolor" Header="Background">
+            <TabItem.Content>Background property information goes here.</TabItem.Content>
+        </TabItem>
+
+        <TabItem Name="foregroundcolor" Header="Foreground">
+            <TabItem.Content>Foreground property information goes here.</TabItem.Content>
+        </TabItem>
+
+        <TabItem Name="bordercolor" Header="BorderColor">
+            <TabItem.Content>Border color property information goes here.</TabItem.Content>
+        </TabItem>
+    </TabControl>
+
 
 </Window>

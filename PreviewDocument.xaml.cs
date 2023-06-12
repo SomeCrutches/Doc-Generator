@@ -24,6 +24,8 @@ namespace ProizvodkaWPF
     /// </summary>
     public partial class PreviewDocument : Window
     {
+        public string Doc_type { get; set; }
+
         public PreviewDocument()
         {
             InitializeComponent();
@@ -49,6 +51,20 @@ namespace ProizvodkaWPF
 
 
 
+            }
+        }
+
+        private void UploadButtonAbra_click(object sender, RoutedEventArgs e)
+        {
+            string gesturefile = System.IO.Path.Combine(Environment.CurrentDirectory, @"Индивидуальное-задание_.xps");
+            if (File.Exists(gesturefile))
+            {
+                XpsDocument doc_pre = new XpsDocument(gesturefile, FileAccess.Read);
+                DocView.Document = doc_pre.GetFixedDocumentSequence();
+            }
+            else
+            {
+                MessageBox.Show("Oops, ne workaet");
             }
         }
     }
