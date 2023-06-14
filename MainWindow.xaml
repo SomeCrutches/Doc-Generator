@@ -6,6 +6,22 @@
         xmlns:local="clr-namespace:ProizvodkaWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <!--A Style that affects all TextBlocks-->
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+    </Window.Resources>
     <TabControl TabStripPlacement="Top" Margin="0, 0, 0, 10">
         
         <TabItem Name="tabIitemContent" Header="TabItem with Buttons">
@@ -38,7 +54,36 @@
                     <ColumnDefinition></ColumnDefinition>
                     
                 </Grid.ColumnDefinitions>
-                <Button Content="Hello" Grid.Row="0" Grid.Column="3" Grid.RowSpan="16" Grid.ColumnSpan="3" />
+
+                <Label Content="ФИО студента" Grid.Row="0" Grid.Column="0" />
+                <TextBox Text="" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstTabFirst"  />
+
+                <Label Content="Направления подготовки" Grid.Row="1" Grid.Column="0" />
+                <TextBox Text="" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstTabSecond"  />
+
+                <Label Content="Направленность программы" Grid.Row="2" Grid.Column="0" />
+                <TextBox Text="" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstTabThird"  />
+
+                <Label Content="Договор от №" Grid.Row="3" Grid.Column="0" />
+                <TextBox Text="" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstTabFourth"  />
+
+                <Label Content="Курс с которого отчислили" Grid.Row="4" Grid.Column="0" />
+                <TextBox Text="" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstTabFifth"  />
+
+                <Label Content="Приказ отчисления от №" Grid.Row="5" Grid.Column="0" />
+                <TextBox Text="" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstTabSixth"  />
+
+
+
+
+
+
+
+
+
+
+                <DocumentViewer x:Name="FirstTab" Grid.Row="0" Grid.Column="3" Grid.RowSpan="16" Grid.ColumnSpan="3" Zoom="85" />
+                <!--<Button Content="Hello" Grid.Row="0" Grid.Column="3" Grid.RowSpan="16" Grid.ColumnSpan="3" />-->
                 <!--<Button Grid.Column="0" Grid.Row="0" Content="Новое окно" Click="New_tab_button" />-->
                 
             </Grid>

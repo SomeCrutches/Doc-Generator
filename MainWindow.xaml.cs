@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Windows.Xps.Packaging;
 
 
 
@@ -27,9 +28,20 @@ namespace ProizvodkaWPF
     {
         public MainWindow()
         {
-            WindowState = WindowState.Maximized;
-
             InitializeComponent();
+
+            WindowState = WindowState.Maximized;
+            string gesturefile = System.IO.Path.Combine(Environment.CurrentDirectory, @"Восстановление-образец.xps");
+            if (File.Exists(gesturefile))
+            {
+                XpsDocument doc_pre = new XpsDocument(gesturefile, FileAccess.Read);
+                FirstTab.Document = doc_pre.GetFixedDocumentSequence();
+            }
+            else
+            {
+                MessageBox.Show("Oops, ne workaet");
+            }
+            
             
         }
 
