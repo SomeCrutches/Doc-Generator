@@ -41,8 +41,8 @@ namespace ProizvodkaWPF
             {
                 MessageBox.Show("Oops, ne workaet");
             }
-            
-            
+
+           
         }
 
         private void New_tab_button(object sender, RoutedEventArgs e)
