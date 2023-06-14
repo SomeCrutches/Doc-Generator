@@ -37,7 +37,7 @@
     </Window.Resources>
     <TabControl TabStripPlacement="Top" Margin="0, 0, 0, 10">
         
-        <TabItem Name="tabIitemContent" Header="TabItem with Buttons">
+        <TabItem Name="tabIitemContent" Header="Восстановление">
             <Grid ShowGridLines="True">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
@@ -95,10 +95,17 @@
                 <Label Content="Приказ отчисления от №" Grid.Row="5" Grid.Column="0" />
                 <TextBox Text="" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstTabSixth"  />
 
+                <Label Content="Срок ликвидации разницы " Grid.Row="6" Grid.Column="0" />
 
 
+                <Label Content="Числить в группе" Grid.Row="7" Grid.Column="0" />
 
-              
+
+                <Label Content="Протокол заседания комиссии" Grid.Row="8" Grid.Column="0" />
+
+
+                <Label Content="Договор об оказании платных услуг" Grid.Row="9" Grid.Column="0" />
+
 
 
 
