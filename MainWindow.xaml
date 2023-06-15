@@ -38,7 +38,8 @@
     <TabControl TabStripPlacement="Top" Margin="0, 0, 0, 10">
         
         <TabItem Name="tabIitemContent" Header="Восстановление">
-            <Grid ShowGridLines="True">
+            <Grid ShowGridLines="False">
+            <!--<Grid ShowGridLines="True">-->
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>

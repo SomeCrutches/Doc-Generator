@@ -66,6 +66,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Parser.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="WatermarkService.cs" />
     <Compile Include="WatermarkAdorner.cs" />
     <Compile Include="MainWindow.xaml.cs">
