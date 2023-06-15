@@ -31,7 +31,7 @@ namespace ProizvodkaWPF
             InitializeComponent();
 
             WindowState = WindowState.Maximized;
-            string gesturefile = System.IO.Path.Combine(Environment.CurrentDirectory, @"Восстановление-образец.xps");
+            string gesturefile = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление-образец.xps");
             if (File.Exists(gesturefile))
             {
                 XpsDocument doc_pre = new XpsDocument(gesturefile, FileAccess.Read);
@@ -44,7 +44,7 @@ namespace ProizvodkaWPF
 
            
         }
-
+        
         private void New_tab_button(object sender, RoutedEventArgs e)
         {
 
@@ -52,6 +52,25 @@ namespace ProizvodkaWPF
             preview_doc.Owner = this;
             preview_doc.Doc_type = "Hello";
             preview_doc.Show();
+        }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление-образец.docx");
+            var paster = new WordPaster(filename);
+
+            //Указываем ключи
+            var items = new Dictionary<string, string>
+            {
+                { "<STUDENT_FIO>", FirstTabFirst.Text },
+                { "<NAPRAVLENIE_PODGOTOVKI>", FirstTabSecond.Text},
+                { "<NAPRAVLENIE_PROGRAMMI>", FirstTabThird.Text },
+                { "<DOGOVOR_NUMBER>", FirstTabFourth.Text },
+                { "<STUDENT_COURSE>", FirstTabFifth.Text },
+                { "<PRIKAZ_OTCHISL>", FirstTabSixth.Text }
+               
+            };
+            paster.Process(items);
         }
     }
 }

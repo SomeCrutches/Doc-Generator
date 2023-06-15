@@ -106,7 +106,7 @@
 
                 <Label Content="Договор об оказании платных услуг" Grid.Row="9" Grid.Column="0" />
 
-
+                <Button x:Name="Test" Grid.Row="10" Grid.Column="0" Content="Test" Click="Test_Click"/>
 
 
 
