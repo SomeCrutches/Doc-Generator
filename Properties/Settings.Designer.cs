@@ -46,5 +46,18 @@ namespace ProizvodkaWPF.Properties {
                 this["Path"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), \"Докум" +
+            "енты дирекция КГЭУ\")")]
+        public string save_path {
+            get {
+                return ((string)(this["save_path"]));
+            }
+            set {
+                this["save_path"] = value;
+            }
+        }
     }
 }

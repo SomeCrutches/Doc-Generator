@@ -8,5 +8,8 @@
     <Setting Name="Path" Type="System.String" Scope="User">
       <Value Profile="(Default)">fsdfdsfsdf</Value>
     </Setting>
+    <Setting Name="save_path" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Документы дирекция КГЭУ")</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

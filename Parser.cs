@@ -63,7 +63,7 @@ namespace ProizvodkaWPF
                 }
 
                 //Сохраняемся
-                var BufferFileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), DateTime.Now.ToString("yyyy.MM.dd HH-mm-ss ") + _fileInfo.Name);
+                var BufferFileName = Path.Combine(Properties.Settings.Default.save_path, DateTime.Now.ToString("yyyy.MM.dd HH-mm-ss ") + _fileInfo.Name);
                 Object newFileName = BufferFileName;
                 app.ActiveDocument.SaveAs2(newFileName);
                 app.ActiveDocument.Close();
