@@ -144,7 +144,9 @@ namespace ProizvodkaWPF
                 { "<ELIMINATE_DAY>", FirstTab7.Text },
                 { "<NEW_GROUP_DATE>", FirstTab8.Text },
                 { "<PROTOCOL_ZASED>", FirstTab9.Text },
-                { "<DOG_PLATN>", FirstTab10.Text }
+                { "<DOG_PLATN>", FirstTab10.Text },
+                { "<NEW_NAPRAVLENIE_PODGOTOVKI>", FirstTab11.Text },
+                { "<NEW_NAPRAVLENIE_PROGRAMMI>", FirstTab12.Text },
 
             };
             paster.Process(items);
@@ -158,9 +160,13 @@ namespace ProizvodkaWPF
             //Указываем ключи
             var items = new Dictionary<string, string>
             {
-                { "<STUDENT_FIO>", FirstTab1.Text },
-                
-                { "<DOG_PLATN>", FirstTab10.Text }
+                { "<STUDENT_FIO>", SecondTab1.Text },
+                { "<STUDENT_GROUP>", SecondTab2.Text },
+                { "<STUDENT_COURSE>", SecondTab3.Text },
+                { "<PAYMENT>", SecondTab4.Text },
+                { "<PROGRAM>", SecondTab5.Text },
+                { "<NAPRAVLEN_PROGRAM>", SecondTab6.Text },
+                { "<ELEMIN_DATE>", SecondTab7.Text }
 
             };
             paster.Process(items);
@@ -173,9 +179,18 @@ namespace ProizvodkaWPF
             //Указываем ключи
             var items = new Dictionary<string, string>
             {
-                { "<STUDENT_FIO>", FirstTab1.Text },
-                
-                { "<DOG_PLATN>", FirstTab10.Text }
+                { "<STUDENT_FIO>", ThirdTab1.Text },
+                { "<STUDENT_GROUP>", ThirdTab2.Text },
+                { "<STUDENT_COURSE>", ThirdTab3.Text },
+                { "<NAPRAVL_PODGOT>", ThirdTab4.Text },
+                { "<NAPRAVL_PRORAMM>", ThirdTab5.Text },
+                { "<NEW_STUDENT_COURSE>", ThirdTab6.Text },
+                { "<NEW_ NAPRAVL_PODGOT>", ThirdTab7.Text },
+                { "<NEW_NAPRAVL_PRORAMM>", ThirdTab8.Text },
+                { "<ELEMEN_DATE>", ThirdTab9.Text },
+                { "<NEW_GROUP_N_DATE>", ThirdTab10.Text },
+                { "<PROTOCOL_ZASED>", ThirdTab11.Text },
+                { "<PRAKTICKS>", ThirdTab12.Text }
 
             };
             paster.Process(items);
@@ -188,9 +203,19 @@ namespace ProizvodkaWPF
             //Указываем ключи
             var items = new Dictionary<string, string>
             {
-                { "<STUDENT_FIO>", FirstTab1.Text },
-                
-                { "<DOG_PLATN>", FirstTab10.Text }
+                { "<STUDENT_FIO>", FourthTab1.Text },
+                { "<UNIVERSITY_FROM>", FourthTab2.Text },
+                { "<FOUNDATION>", FourthTab3.Text },
+                { "<STUDENT_COURSE>", FourthTab4.Text },
+                { "<NAPRAVL_PODG>", FourthTab5.Text },
+                { "<NAPRAVL_PROG>", FourthTab6.Text },
+                { "<FORM_OF_EDUC>", FourthTab7.Text },
+                { "<NEW_FOUNDATION>", FourthTab8.Text },
+                { "<DATE_ELEM>", FourthTab9.Text },
+                { "<STUDENT_GROUP_N_DATE>", FourthTab10.Text },
+                { "<REFERENCE>", FourthTab11.Text },
+                { "<PROTOCOL_ZASED>", FourthTab12.Text },
+                { "<DOG_OKAZ_USLUG_OT_N>", FourthTab13.Text }
 
             };
             paster.Process(items);
