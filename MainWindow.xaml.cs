@@ -35,6 +35,7 @@ namespace ProizvodkaWPF
             InitializeComponent();
 
             WindowState = WindowState.Maximized;
+
             string gesturefile = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление-образец.xps");
             if (File.Exists(gesturefile))
             {
@@ -43,8 +44,43 @@ namespace ProizvodkaWPF
             }
             else
             {
-                MessageBox.Show("Oops, ne workaet");
+                MessageBox.Show(".xps file doesn't exist");
             }
+
+            string gesturefile1 = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\отчисление-по-сб.ж-образец.xps");
+            if (File.Exists(gesturefile1))
+            {
+                XpsDocument doc_pre = new XpsDocument(gesturefile1, FileAccess.Read);
+                SecondTab.Document = doc_pre.GetFixedDocumentSequence();
+            }
+            else
+            {
+                MessageBox.Show(".xps file doesn't exist");
+            }
+
+            string gesturefile2 = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Перевод-с-ОП-на-другую-ОП-образец.xps");
+            if (File.Exists(gesturefile2))
+            {
+                XpsDocument doc_pre = new XpsDocument(gesturefile2, FileAccess.Read);
+                ThirdTab.Document = doc_pre.GetFixedDocumentSequence();
+            }
+            else
+            {
+                MessageBox.Show(".xps file doesn't exist");
+            }
+
+            string gesturefile3 = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\приказ-о-зачислении-в-порядке-перевода-образец.xps");
+            if (File.Exists(gesturefile3))
+            {
+                XpsDocument doc_pre = new XpsDocument(gesturefile3, FileAccess.Read);
+                FourthTab.Document = doc_pre.GetFixedDocumentSequence();
+            }
+            else
+            {
+                MessageBox.Show(".xps file doesn't exist");
+            }
+
+
 
             if (Properties.Settings.Default.save_path == defaultpath)
             {
@@ -66,9 +102,10 @@ namespace ProizvodkaWPF
             preview_doc.Show();
         }
 
+        /*
         private void Test_Click(object sender, RoutedEventArgs e)   // old code
         {
-            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление-образец.docx");
+            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление.docx");
             var paster = new WordPaster(filename);
 
             //Указываем ключи
@@ -88,10 +125,11 @@ namespace ProizvodkaWPF
             };
             paster.Process(items);
         }
+        */
 
         private void FrstTbGen(object sender, RoutedEventArgs e)
         {
-            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление-образец.docx");
+            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление.docx");
             var paster = new WordPaster(filename);
 
             //Указываем ключи
@@ -112,10 +150,55 @@ namespace ProizvodkaWPF
             paster.Process(items);
         }
 
+        private void ScndTbGen(object sender, RoutedEventArgs e)
+        {
+            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Oтчисление по сб ж.docx");
+            var paster = new WordPaster(filename);
 
+            //Указываем ключи
+            var items = new Dictionary<string, string>
+            {
+                { "<STUDENT_FIO>", FirstTab1.Text },
+                
+                { "<DOG_PLATN>", FirstTab10.Text }
 
+            };
+            paster.Process(items);
+        }
+        private void ThrdTbGen(object sender, RoutedEventArgs e)
+        {
+            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Перевод с ОП на другую ОП.docx");
+            var paster = new WordPaster(filename);
+
+            //Указываем ключи
+            var items = new Dictionary<string, string>
+            {
+                { "<STUDENT_FIO>", FirstTab1.Text },
+                
+                { "<DOG_PLATN>", FirstTab10.Text }
+
+            };
+            paster.Process(items);
+        }
+        private void FrthTbGen(object sender, RoutedEventArgs e)
+        {
+            var filename = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\приказ о зачислении в порядке перевода.docx");
+            var paster = new WordPaster(filename);
+
+            //Указываем ключи
+            var items = new Dictionary<string, string>
+            {
+                { "<STUDENT_FIO>", FirstTab1.Text },
+                
+                { "<DOG_PLATN>", FirstTab10.Text }
+
+            };
+            paster.Process(items);
+        }
 
         
+            
+
 
         private void PathLabelUpdate(string value)
         {
@@ -169,5 +252,7 @@ namespace ProizvodkaWPF
             "Успешно");
             PathLabelUpdate(Properties.Settings.Default.save_path);
         }
+
+        
     }
 }

@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using Word = Microsoft.Office.Interop.Word;
-
+using System.Windows;
 
 namespace ProizvodkaWPF
 {
@@ -62,8 +62,15 @@ namespace ProizvodkaWPF
                         ReplaceWith: missing, Replace: replace);
                 }
 
+                //Смотрим есть ли папка для сохранения
+                if (!Directory.Exists(Properties.Settings.Default.save_path))
+                {
+                    Directory.CreateDirectory(Properties.Settings.Default.save_path);
+                }
+
                 //Сохраняемся
-                var BufferFileName = Path.Combine(Properties.Settings.Default.save_path, DateTime.Now.ToString("yyyy.MM.dd HH-mm-ss ") + _fileInfo.Name);
+                    var BufferFileName = Path.Combine(Properties.Settings.Default.save_path, (DateTime.Now.ToString("yyyy.MM.dd HH-mm-ss ") + _fileInfo.Name));
+                //MessageBox.Show(BufferFileName);
                 Object newFileName = BufferFileName;
                 app.ActiveDocument.SaveAs2(newFileName);
                 app.ActiveDocument.Close();
