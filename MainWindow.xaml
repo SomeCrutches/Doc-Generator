@@ -437,7 +437,7 @@
 
                 <Button
                     x:Name="SecondTabBtn"
-                    Grid.Row="10"
+                    Grid.Row="7"
                     Grid.Column="0"
                     Click="ScndTbGen"
                     Content="Создать документ">
@@ -603,7 +603,7 @@
                         Grid.ColumnSpan="2">
                         <TextBox x:Name="ThirdTab7">
                             <controls:WatermarkService.Watermark>
-                                <TextBlock>Дата вида 22.02.2022 г.</TextBlock>
+                                <TextBlock>09.04.01 Информатика и вычислительная техника</TextBlock>
                             </controls:WatermarkService.Watermark>
                         </TextBox>
                     </AdornerDecorator>
@@ -612,14 +612,14 @@
                     <Label
                         Grid.Row="7"
                         Grid.Column="0"
-                        Content="Числить в группе" />
+                        Content="Новая направленность программы" />
                     <AdornerDecorator
                         Grid.Row="7"
                         Grid.Column="1"
                         Grid.ColumnSpan="2">
                         <TextBox x:Name="ThirdTab8">
                             <controls:WatermarkService.Watermark>
-                                <TextBlock>Новая группа, с какого числа</TextBlock>
+                                <TextBlock>Профиль</TextBlock>
                             </controls:WatermarkService.Watermark>
                         </TextBox>
                     </AdornerDecorator>
@@ -628,14 +628,14 @@
                     <Label
                         Grid.Row="8"
                         Grid.Column="0"
-                        Content="Протокол заседания комиссии" />
+                        Content="Срок ликвид. уч. разницы(до)" />
                     <AdornerDecorator
                         Grid.Row="8"
                         Grid.Column="1"
                         Grid.ColumnSpan="2">
                         <TextBox x:Name="ThirdTab9">
                             <controls:WatermarkService.Watermark>
-                                <TextBlock>Протокол от, №</TextBlock>
+                                <TextBlock>22.02.2022 г.</TextBlock>
                             </controls:WatermarkService.Watermark>
                         </TextBox>
                     </AdornerDecorator>
@@ -644,14 +644,14 @@
                     <Label
                         Grid.Row="9"
                         Grid.Column="0"
-                        Content="Договор об оказании платных услуг" />
+                        Content="Новая группа и дата" />
                     <AdornerDecorator
                         Grid.Row="9"
                         Grid.Column="1"
                         Grid.ColumnSpan="2">
                         <TextBox x:Name="ThirdTab10">
                             <controls:WatermarkService.Watermark>
-                                <TextBlock>Договр от, №</TextBlock>
+                                <TextBlock>ТРП-3-20 с 22.02.2022г.</TextBlock>
                             </controls:WatermarkService.Watermark>
                         </TextBox>
                     </AdornerDecorator>
@@ -659,14 +659,14 @@
                     <Label
                         Grid.Row="10"
                         Grid.Column="0"
-                        Content="Договор об оказании платных услуг" />
+                        Content="Протокол засед. атт. ком." />
                     <AdornerDecorator
                         Grid.Row="10"
                         Grid.Column="1"
                         Grid.ColumnSpan="2">
                         <TextBox x:Name="ThirdTab11">
                             <controls:WatermarkService.Watermark>
-                                <TextBlock>Договр от, №</TextBlock>
+                                <TextBlock>22.02.2022г. №1234</TextBlock>
                             </controls:WatermarkService.Watermark>
                         </TextBox>
                     </AdornerDecorator>
@@ -674,14 +674,14 @@
                     <Label
                         Grid.Row="11"
                         Grid.Column="0"
-                        Content="Договор об оказании платных услуг" />
+                        Content="Учебаня практика" />
                     <AdornerDecorator
                         Grid.Row="11"
                         Grid.Column="1"
                         Grid.ColumnSpan="2">
                         <TextBox x:Name="ThirdTab12">
                             <controls:WatermarkService.Watermark>
-                                <TextBlock>Договр от, №</TextBlock>
+                                <TextBlock>технологической, проектно-технологической, рассредоточенной</TextBlock>
                             </controls:WatermarkService.Watermark>
                         </TextBox>
                     </AdornerDecorator>
@@ -774,14 +774,14 @@
                 <Label
                     Grid.Row="1"
                     Grid.Column="0"
-                    Content="Направления подготовки" />
+                    Content="Из какого ВУЗа" />
                 <AdornerDecorator
                     Grid.Row="1"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab2">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>12.34.56 Экономика</TextBlock>
+                            <TextBlock>Полное название</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -790,14 +790,14 @@
                 <Label
                     Grid.Row="2"
                     Grid.Column="0"
-                    Content="Направленность программы" />
+                    Content="На какой основе обучался" />
                 <AdornerDecorator
                     Grid.Row="2"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab3">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Профиль обучения</TextBlock>
+                            <TextBlock>Договорной основе и т.п.</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -806,14 +806,14 @@
                 <Label
                     Grid.Row="3"
                     Grid.Column="0"
-                    Content="Договор от, №" />
+                    Content="Курс студента" />
                 <AdornerDecorator
                     Grid.Row="3"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab4">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Договор об оказании платных услуг(предыдущий)</TextBlock>
+                            <TextBlock>На который зачислил здесь</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -822,14 +822,14 @@
                 <Label
                     Grid.Row="4"
                     Grid.Column="0"
-                    Content="Курс с которого отчислили" />
+                    Content="Направление подготовки" />
                 <AdornerDecorator
                     Grid.Row="4"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab5">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Обычное число</TextBlock>
+                            <TextBlock>39.03.01 Социология</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -838,14 +838,14 @@
                 <Label
                     Grid.Row="5"
                     Grid.Column="0"
-                    Content="Приказ отчисления от, №" />
+                    Content="Направленность программы" />
                 <AdornerDecorator
                     Grid.Row="5"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab6">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Приказом от __ №__</TextBlock>
+                            <TextBlock>Профиль</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -854,14 +854,14 @@
                 <Label
                     Grid.Row="6"
                     Grid.Column="0"
-                    Content="Срок ликвидации разницы " />
+                    Content="По какой форме обучения" />
                 <AdornerDecorator
                     Grid.Row="6"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab7">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Дата вида 22.02.2022 г.</TextBlock>
+                            <TextBlock>Очной/заочной</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -870,14 +870,14 @@
                 <Label
                     Grid.Row="7"
                     Grid.Column="0"
-                    Content="Числить в группе" />
+                    Content="На какой основе обучение" />
                 <AdornerDecorator
                     Grid.Row="7"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab8">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Новая группа, с какого числа</TextBlock>
+                            <TextBlock>договорной/т.п. основе</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -886,14 +886,14 @@
                 <Label
                     Grid.Row="8"
                     Grid.Column="0"
-                    Content="Протокол заседания комиссии" />
+                    Content="Срок ликвид. разницы в уч. планах(до)" />
                 <AdornerDecorator
                     Grid.Row="8"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab9">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Протокол от, №</TextBlock>
+                            <TextBlock>Дата вида: 22.02.2022г.</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -902,14 +902,14 @@
                 <Label
                     Grid.Row="9"
                     Grid.Column="0"
-                    Content="Договор об оказании платных услуг" />
+                    Content="Новая группа и дата" />
                 <AdornerDecorator
                     Grid.Row="9"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab10">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Договр от, №</TextBlock>
+                            <TextBlock>ТРП-3-20 с 22.02.2022г.</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -917,14 +917,14 @@
                 <Label
                     Grid.Row="10"
                     Grid.Column="0"
-                    Content="Договор об оказании платных услуг" />
+                    Content="Справка о периоде обучения" />
                 <AdornerDecorator
                     Grid.Row="10"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab11">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Договр от, №</TextBlock>
+                            <TextBlock>№ 0.1.2.88.1.01-18/73/2021 от 04.03.2021г.</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -932,14 +932,14 @@
                 <Label
                     Grid.Row="11"
                     Grid.Column="0"
-                    Content="Договор об оказании платных услуг" />
+                    Content="Протокол засед. атт. ком." />
                 <AdornerDecorator
                     Grid.Row="11"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab12">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Договр от, №</TextBlock>
+                            <TextBlock>№1234 от 22.02.2022г.</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -947,14 +947,14 @@
                 <Label
                     Grid.Row="12"
                     Grid.Column="0"
-                    Content="Договор об оказании платных услуг" />
+                    Content="Договор об оказании услуг" />
                 <AdornerDecorator
                     Grid.Row="12"
                     Grid.Column="1"
                     Grid.ColumnSpan="2">
                     <TextBox x:Name="FourthTab13">
                         <controls:WatermarkService.Watermark>
-                            <TextBlock>Договр от, №</TextBlock>
+                            <TextBlock>договор на оказание платных образовательных услуг от 12.03.2021 № 56/З/П/21/ИЦТЭ</TextBlock>
                         </controls:WatermarkService.Watermark>
                     </TextBox>
                 </AdornerDecorator>
@@ -1031,12 +1031,28 @@
                     Grid.Row="1"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Content="Рабочий стол, папка 'Документы дирекция КГЭУ'" />
+                    
+                    BorderBrush="Black"
+                    
+                    Content="Рабочий стол, папка 'Документы дирекция КГЭУ'">
+                    <Label.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10" />
+                            <Setter Property="BorderThickness" Value="10" />
+                        </Style>
+                    </Label.Resources>
+                </Label>
+
+                <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="0.5" CornerRadius="5"/>
+
+
+
                 <Button
                     x:Name="Set_Default_Path_Button"
                     Grid.Row="1"
                     Grid.Column="2"
                     Click="Set_Default_Path_Button_Click"
+                  
                     Content="Установить стандартный путь">
                     <Button.Resources>
                         <Style TargetType="Border">
