@@ -29,11 +29,13 @@ namespace ProizvodkaWPF
     {
         private string folderName;
         string defaultpath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Документы дирекция КГЭУ");
-
+        
         public MainWindow()
         {
             InitializeComponent();
 
+            this.Title = "Генерация документов";
+            Properties.Settings.Default.save_path = defaultpath;
             WindowState = WindowState.Maximized;
 
             string gesturefile = System.IO.Path.Combine(Environment.CurrentDirectory, @"Docs\Восстановление-образец.xps");
